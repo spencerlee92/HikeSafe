@@ -69,7 +69,7 @@ body {
   margin: 40px 0;
 
   p + h2 {
-    margin-top: 28px;
+    margin-top: 2px;
   }
 }
 
@@ -121,12 +121,11 @@ body {
       padding: 8px 10px 0px 0px;
       text-align:center;
       border-radius: 50px;
-   
       width: 60px;
       height: 60px;
       color: white;
       display: block;
-      margin: 450px auto 20px;
+      margin: 350px auto 20px;
       border: 3px solid #e8caa8;
       box-shadow: 0 1px 2px rgba(0,0,0,0.25);
       -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.25);
@@ -214,13 +213,38 @@ border-radius:15px;
 }
 
 img{
-  border-radius: 10px;
+  
   float: left;
+  padding-top: 25px;
+  border-radius: 10px;
 }
 
 p{
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left:5px;
   text-indent:2em;
   line-height: 30px;
+}
+
+#googleMap, #googleMap2, #googleMap3, #googleMap4, #googleMap5, #googleMap6, #googleMap7, #googleMap8, #googleMap9 {
+    //left:0;
+    //top:0;
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+    border-radius: 10px;
+    //height:100% !important;
+   //width:100% !important;
+   
+ 
+    }
+
+#googleMap, #googleMap2, #googleMap3, #googleMap4, #googleMap5, #googleMap6, #googleMap7, #googleMap8, #googleMap9 iframe{
+  left:0;
+    top:0;
+    height:50% !important;
+    width:50% !important;
+    position:absolute;
+    border-radius: 10px !important;
 }
