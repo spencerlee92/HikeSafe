@@ -1,4 +1,4 @@
-$icon-font-path: "../fonts/";
+$icon-font-path: '../fonts/';
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -11,15 +11,16 @@ $icon-font-path: "../fonts/";
   padding: 0.2em 0;
 }
 
-/* Space out content a bit   https://static.pexels.com/photos/1786/wood-nature-person-walking.jpg*/
+/* Space out content a bit */
 body {
-    background: url("../images/pexels-photo-106208.jpeg") no-repeat center center fixed; 
+   background: url("../images/pexels-photo-106208.jpeg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -56,8 +57,7 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: 10px solid #e5e5e5;
-
+  border-bottom: 1px solid #e5e5e5;
   .btn {
     font-size: 21px;
     padding: 14px 24px;
@@ -67,17 +67,15 @@ body {
 /* Supporting marketing content */
 .marketing {
   margin: 40px 0;
-
-  p + h2 {
-    margin-top: 2px;
+  p + h4 {
+    margin-top: 28px;
   }
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 1230px;
-    opacity: 0.9;
+    max-width: 730px;
   }
 
   /* Remove the padding we set earlier */

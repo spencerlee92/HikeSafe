@@ -1,10 +1,9 @@
-// generated on 2016-08-21 using generator-webapp 2.1.0
+// generated on 2016-08-29 using generator-webapp 2.1.0
 const gulp = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
 const browserSync = require('browser-sync');
 const del = require('del');
 const wiredep = require('wiredep').stream;
-const sass = require('gulp-sass');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -20,7 +19,7 @@ gulp.task('styles', () => {
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
     .pipe($.sourcemaps.write())
-   .pipe(gulp.dest('.tmp/styles'))
+    .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({stream: true}));
 });
 
@@ -172,10 +171,4 @@ gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
 
 gulp.task('default', ['clean'], () => {
   gulp.start('build');
-});
-
-gulp.task('sass', function() {
-  return gulp.src('app/styles/main.scss') // Gets all files ending with .scss in app/scss and children dirs
-    .pipe(sass())
-    .pipe(gulp.dest('app/styles'))
 });
