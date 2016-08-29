@@ -7,12 +7,6 @@
     <title>HikeSafe</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.jpg">
-    <!-- Place favicon.ico in the root directory -->
-
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
@@ -25,17 +19,8 @@
     <script type="text/javascript" src="scripts/jquery.wheelmenu.js"></script>
    
     <script src="scripts/main.js"></script>
-    
-
-
-
-    <!-- endbuild -->
   </head>
   <body>
-    <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
     <nav class="navbar-default">
   <ul id="nav">
     <li class="dropdown">
@@ -43,25 +28,30 @@
     </li>
   </ul>
     </nav>
-
-
     <div class="container" id="Start">
 			 <a href="#wheel" class="wheel-button">
 	     <span class="glyphicon glyphicon-send"></span>
 	    </a>
 	    <div class="pointer">Start Journey</div>
       <ul id="wheel"  data-angle="all">
-        <li class="item"><a href="main.html"><span class="glyphicon glyphicon-globe"></span>Main</a></li>
-        <li class="item"><a href="#home"><span class="glyphicon glyphicon-tree-conifer"></span>Walks</a></li>
-        <li class="item"><a href="#home"><span class="glyphicon glyphicon-user"></span>Contact</a></li>      
+        
+        <li class="item"><a href="walk.html"><span class="glyphicon glyphicon-tree-conifer"></span>Walks</a></li>
+        <li class="item"><a href="contact.html"><span class="glyphicon glyphicon-user"></span>Contact</a></li>      
       </ul>
     </div>
-
-   
-   
-
+  
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+    function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;s.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(s);try{t.cookie=u.cookie}catch(h){}for(t.queue=[],i=["Event","Exception","Metric","PageView","Trace","Dependency"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+    }({
+        instrumentationKey:"4b5ccee4-73cc-446f-871b-0c2783e9b2a9"
+    });
+       
+    window.appInsights=appInsights;
+    appInsights.trackPageView();
+  </script>
       
-    
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

@@ -240,11 +240,28 @@ p{
  
     }
 
-#googleMap, #googleMap2, #googleMap3, #googleMap4, #googleMap5, #googleMap6, #googleMap7, #googleMap8, #googleMap9 iframe{
+#googleMap, #googleMap2, #googleMap3, #googleMap4, #googleMap5, #googleMap6, #googleMap7, #googleMap8, #googleMap9, iframe{
   left:0;
     top:0;
     height:50% !important;
     width:50% !important;
     position:absolute;
     border-radius: 10px !important;
+    float: left;
+  
+}
+
+h3{
+  text-align: center;
+  padding-top: 5%;
+
+}
+h1{
+  text-align: center;
+  padding-top: 5%;
+  
+}
+h1,h2,h3,h4{
+  font-family: Fantasy;
+  font-size: 40px;
 }
